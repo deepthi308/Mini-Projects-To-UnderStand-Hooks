@@ -1,0 +1,107 @@
+/* Importing Google Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800&display=swap");
+
+/* Global Styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/* Root Variables */
+
+:root {
+  --color-yellow: yellow;
+  --color-brown: rgb(86, 1, 1);
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(250, 235, 108);
+}
+
+.app {
+  height: 20rem;
+  width: 25rem;
+  font-weight: 800;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  background-color: var(--color-yellow);
+  color: var(--color-brown);
+  display: flex;
+  flex-direction: column;
+  border: 0.2rem solid var(--color-brown);
+  border-radius: 1rem;
+}
+
+header {
+  flex: 0.2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main {
+  flex: 0.6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 0.2rem solid var(--color-brown);
+  border-bottom: 0.2rem solid var(--color-brown);
+}
+
+header .circle {
+  height: 2rem;
+  width: 2rem;
+  border: 0.2rem solid var(--color-brown);
+  /* background-color: var(--color-yellow); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+footer {
+  flex: 0.2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 0.2rem;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  color: var(--color-yellow);
+  background-color: var(--color-brown);
+  transition: scale 0.2s ease-in-out;
+}
+
+.btn:hover {
+  scale: 80%;
+}
+
+.btn:focus {
+  scale: 110%;
+}
+
+.active {
+  background-color: greenyellow;
+}
+
+.disabled {
+  background-color: grey;
+  color: black;
+  opacity: 60%;
+}
